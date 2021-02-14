@@ -1,0 +1,333 @@
+<html>
+  <style>
+body{
+  background: #ffb499;
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+#image{
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1;
+}
+#image > div{
+  background-color: 7D4747;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: flex-start;
+}
+#image > div >img{
+   max-height: 100px;
+   max-width: 100px;
+}
+#container{
+  display: flex;
+  flex-flow: column wrap;
+}
+#main-body{
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+a{
+  font-family: "Open Sans", sans-serif;
+  color: #FFF;
+  text-decoration: none;
+}
+a:hover{
+	background-color: 
+  cursor: pointer;
+}
+#features-anchor{
+    margin-bottom: 100px;
+}
+#header{
+  width: 100%;
+  position: fixed;
+  background-color: hsl(240, 1%, 20%);
+  color: #FDEDEC ;
+  
+  display: flex;  
+  flex-wrap: wrap;
+}
+#header > div{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#header > div > nav{
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+#feature-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.features{
+  margin: 0px 20px 50px 20px;
+  width: 300px;
+  margin-bottom: 100px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  text-align: center;
+}
+.features > p{
+  width: 100%;
+}
+.features > h3{
+  width: 100%;
+  border-bottom: 2px solid hsl(35, 100%, 60%);
+  background-color: hsl(0, 0%, 90%);
+}
+#video-wrapper{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+#button-container{
+  margin-top: 25px;
+  display: flex;
+  bottom: 0;
+  justify-content: center;
+}
+#submit{
+  background-color: hsl(196, 100%, 47%);
+  border: 1px solid hsl(196, 100%, 47%);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+}
+#submit:hover{
+  cursor: pointer;
+}
+button{
+  background-color: hsl(35, 100%, 60%);
+  border: 1px solid hsl(35, 100%, 60%);
+  bottom: 0;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+}
+button:hover{
+  cursor: pointer;
+
+}
+#info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+#video-wrapper > div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#models{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.model-class{
+  width: 300px;
+  min-width: 100px;
+  background-color: #FFF;
+  margin: 0px 20px 0px 20px;
+  border: 1px solid black;
+  
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex: 1;
+}
+.model-name{
+  width: 100%;
+  background-color: hsl(0,0%,80%);
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: center;
+}
+.model-description{
+  display: flex;
+  line-height: 40px;
+  height: 100%;
+  justify-content: center;
+}
+footer{
+  width: 100%;
+  height: 45px;
+  background-color: hsl(240, 1%, 20%);
+  display: flex;
+  align-items: center;
+}
+footer > div{
+  width: 100%;
+}
+footer > div > nav{
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+footer > div > nav > a{
+  border-right: 2px solid hsla(240, 1%, 25%, 1);
+  margin-right: 5px;
+}
+#signature{
+  width: 100%;
+  margin-right: 10px;
+  display: flex;
+  color: #FFF;
+  flex-direction: row;
+  font-size: 0.8em;
+  justify-content: flex-end;
+}
+
+@media (max-width: 1000px){
+  .model-class{
+    min-width: 300px;
+    max-width: 300px;
+    margin-top: 20px;
+  }
+  footer > div > nav{
+    width: 60%;
+  }
+  #header > div > nav{
+    width: 100%;
+  }
+}
+@media (max-width: 700px){
+  .model-class{
+    margin-top: 20px;
+  }
+  footer > div > nav{
+    width: 80%;
+  }
+}
+@media (max-width: 500px){
+  footer > div > nav{
+    width: 100%;
+  }  
+}
+  
+  </style>
+  <body>
+    <div id="container">
+      
+      <header id="header">
+        <div id="image">
+          <div id="title">
+          	<h1 style="color: black">Best <span style="color:hsl(35, 90%, 50%)">Tea</span></h1>
+            <img id="header-img" alt="product logo thing" src="https://64.media.tumblr.com/180c914dc3f19a504d5908b57c062fa6/abc03df889807718-29/s540x810/085814de3cb2e4c46d2eca19e2c3ab46975db7ba.png">
+            
+          </div>
+        </div>
+        <div>
+          <nav id="nav-bar">
+            <a class="nav-link" href="#features-anchor">FEATURES</a>
+            <a class="nav-link" href="#video-anchor">PREPARATION</a>
+            <a class="nav-link" href="#form">SUBSCRIPTION</a>
+          </nav>
+        </div>
+      </header>
+      
+      <div id="main-body">
+        <p id="features-anchor"></p>
+        <div>
+          <h2>The BestTea Subscription Boxes</h1>
+        </div>
+        <div id="feature-container">
+          <div class="features">
+            <h3>20+ Cups</h3>
+            <p>Your monthly best tea box makes up to 20+ fresh cups<br> </p>
+          </div>
+          <div class="features">
+            <h3>Loose leaf Tea</h3>
+            <p>Tea leaves are not crammed into a tea bag, the tea maintains a higher quality and aroma while offering the best possible health benefits</p>
+          </div>
+          <div class="features">
+            <h3 id="video-anchor">Different Tea Leaves</h3>
+            <p>Different loose tea leaves to choose from based on your preferences</p>
+          </div>
+        </div>
+
+        <div id="video-wrapper">
+          <div>
+            <p>BestTea Tea Preparation</p>
+          </div>
+          <iframe id="video" width="560" height="315" src="https://www.youtube.com/watch?v=8yYzxfX5y4U" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div id="models">
+          <div class="model-class">
+            <div class="model-name">
+              <h2>Mini Box</h2>
+            </div>
+            <div class="model-description">
+              <p>+2 different tea leaves<br>
+              +1 preparation manual<br>
+              +resuable tea filter</p>
+              
+            </div>
+            <button type="submit" style="width:100%;font-weigth:lighter">$15/month</button>
+          </div>
+          <div class="model-class">
+            <div class="model-name">
+              <h2>Standard Box</h2>
+            </div>
+            <div class="model-description">
+              <p>+4 different tea leaves<br>
+              +1 preparation manual<br>
+              +reusable tea filter <br>
+              +2 keto snacks</p>
+            </div>
+            <button type="submit" style="width:100%;font-weigth:lighter">$20/month</button>
+          </div>
+          <div class="model-class">
+            <div class="model-name">
+              <h2>Tea Bundle</h2>
+            </div>
+            <div class="model-description">
+              <p>+6 different tea leaves<br>
+              +1 preparation manual<br>
+              +reusable tea filter<br>
+              +4 keto snacks<br>
+              +optional: floral tea or additional snack</p>
+            </div>
+            <button type="submit" style="width:100%;font-weigth:lighter">Custom pricing</button>
+          </div>
+        </div>
+
+        <div id="info">
+          <h3>Get your BestTea Sbscription Box now!</h3>
+          <form id="form" action="https://www.freecodecamp.org/email-submit" method="get">
+             <input name="email" type="email" id="email" placeholder="Enter your email" ></input></label>
+            <div id="button-container">
+              <input type="submit" id="submit" value="Subscribe"></input>
+            </div>
+          </form>
+        </div>
+      </div>
+    
+       <footer class="text-center">
+      <hr>
+      <p id="bottom_text"> <a href=" https://codepen.io/alexsjcho/" target="_blank">Mitchell 2021</a>
+    </footer>
+    </div>
+      
+    </div>
+
+
+  </body>
+</html>
